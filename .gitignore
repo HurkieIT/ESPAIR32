@@ -1,0 +1,74 @@
+gitignore
+
+.vscode/
+ .pio/
+ .pioenvs/
+ .idea/
+ *.log
+ *.bin
+ *.elf
+ *.hex
+ *.map
+ *.o
+ *.pyc
+ *.tmp
+ .DS_Store
+
+# PlatformIO specific ignores
+    .piolibdeps/
+    .piocache/
+    .pio/build/
+    .pioenvs/
+    .pio/libdeps/
+    .pio/libstorage/
+    .pio/packages/
+    .pio/test/
+    .pio/.cache/
+    .pio/.config/
+    
+# Ignore PlatformIO project files
+platformio.ini
+
+# Ignore build files
+build/ 
+debug/
+output/
+release/
+temp/
+tmp/
+
+# Ignore dependency directories
+lib/deps/
+lib/packages/  
+lib/storage/
+lib/.piolibdeps/
+lib/.piocache/
+lib/.cache/
+lib/.config/
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-project
+*.sublime-workspace
+*.iml
+*.ipr
+*.iws
+*.project
+*.classpath
+*.settings/
+*.cproject
+*.launch
+*.metadata/
+*.tmproj
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserstate
+*.user
+*.suo
+*.ncb
+*.opt
+*.aps
+*.pch
+*.pdb
