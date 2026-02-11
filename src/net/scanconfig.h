@@ -4,7 +4,8 @@
 // = De ESP32 kan niet tegelijkertijd vast zitten aan een netwerk en scannen, dit komt omdat de ESP32 maar 1 netwerkinterface heeft, dus als er een scan plaats vindt disconnect de ESP tijdelijk met een netwerk waarmee het verbonden zit om nieuwe resultaten en sterkere signalen weer te geven.
 //Bron: https://docs.espressif.com/projects/arduino-esp32/en/latest/api/wifi.html
 
-#include <stdint.h>
+#pragma once
+#include <Arduino.h>
 #include "config/config.h"
 
 struct scanconfig {
@@ -21,6 +22,3 @@ struct scanconfig {
     unsigned int maxNetworks = WIFI_MAX_NETWORKS;
     unsigned int scanIntervalMs = WIFI_SCAN_INTERVAL_MS;
 }; 
-
-//Hierbij ontwikkel ik nog een functie met een & functie om de configuratie te kopieren naar de functie zelf. https://dev.to/sandordargo/how-to-use-ampersands-in-c-3kga#:~:text=Use%20%26%20to%20declare%20a%20reference,class%20members%2C%20method%20parameters).
-void scanNetworks(scanconfig& config);
