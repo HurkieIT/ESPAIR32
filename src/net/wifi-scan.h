@@ -21,3 +21,5 @@ struct scanconfig {
     unsigned int maxNetworks = WIFI_MAX_NETWORKS;
     unsigned int scanIntervalMs = WIFI_SCAN_INTERVAL_MS;
 }; 
+
+voic scanNetworks(scanconfig& config);
