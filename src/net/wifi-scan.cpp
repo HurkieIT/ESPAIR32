@@ -15,6 +15,7 @@ void NetworkScan(const scanconfig& config) {
 
     int numNetworks = WiFi.scanNetworks(false, config.showHidden);
 
+    //Hier wordt er gecontroleerd met een if statement of er wel netwerken beschikbaar zijn, is het aantal netwerken kleiner of gelijk aan 0, dan krijg je "No Networks Found" te zien.
     if (numNetworks <= 0)
     {
         Serial.print("No Networks Found");
@@ -53,6 +54,7 @@ void NetworkScan(const scanconfig& config) {
             } else {
                 Serial.print("Unknown");
             }
-        Serial.println("________________________________________________");
+            Serial.println();
+            Serial.println("________________________________________________");
     }
 }
