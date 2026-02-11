@@ -16,5 +16,6 @@ void setup() {
 }
 
 void loop() {
-    NetworkScan(config);
+    scanNetworks(config);
+    delay(config.scanIntervalMs);
 }
