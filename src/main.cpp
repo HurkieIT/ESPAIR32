@@ -1,4 +1,4 @@
-#include <Arduino.h>
+#include <arduino.h>
 #include <WiFi.h>
 #include <Wire.h>
 // OLED lib kies je later (Adafruit SSD1305/SSD1306 of U8g2)
@@ -13,6 +13,3 @@ const int  BUTTON_PIN_MODE   = INPUT_PULLUP;
 
 unsigned long lastScan = 0;
 const unsigned long SCAN_INTERVAL_MS = 5000;
-
-
-
