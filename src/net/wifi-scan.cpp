@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include <WiFi.h>
-#include "wifi-scan.h"
+#include "net/wifi-scan.h"
 
 void NetworkScan(const scanconfig& config) {
 
