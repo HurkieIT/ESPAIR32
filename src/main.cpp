@@ -15,7 +15,5 @@ void setup() {
 }
 
 void loop {
-
-
-
+scanNetworks();
 }
