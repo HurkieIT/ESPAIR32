@@ -1,15 +1,21 @@
-#include <arduino.h>
-#include <WiFi.h>
-#include <Wire.h>
-// OLED lib kies je later (Adafruit SSD1305/SSD1306 of U8g2)
+#include <Arduino.h>
+#include "net/wifi-scan/scanconfig.h"
+#include "config/config.h"
 
-const int BTN_SELECT = 19;
-const int BTN_DOWN   = 18;
-const int BTN_BACK   = 16;
-const int BTN_OK     = 17;
+scanconfig config;
 
-const bool BUTTON_ACTIVE_LOW = true;
-const int  BUTTON_PIN_MODE   = INPUT_PULLUP;
+void setup() {
+    Serial.begin(DEBUG_BAUDRATE);
+    //Hier worden de configuraties ingesteld die in de mainloop gebruikt gaaan worden. Hieronder roep ik de gemaakte struct aan met Boolean waarden en de twee unsigned integers, deze worden statisch gebruikt om geupdate te worden in de main loop. 
+    
 
-unsigned long lastScan = 0;
-const unsigned long SCAN_INTERVAL_MS = 5000;
+
+    Serial.println("Wifi Scanner Start");
+
+}
+
+void loop {
+
+
+
+}
