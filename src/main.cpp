@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "net/wifi-scan/scanconfig.h"
+#include "net/wifi-scan/wifi-scan.h"
 #include "config/config.h"
 
 scanconfig config;
