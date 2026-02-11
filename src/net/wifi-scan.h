@@ -22,4 +22,4 @@ struct scanconfig {
     unsigned int scanIntervalMs = WIFI_SCAN_INTERVAL_MS;
 }; 
 
-voic scanNetworks(scanconfig& config);
+void scanNetworks(scanconfig& config);
