@@ -14,7 +14,7 @@ struct scanconfig {
     bool sortByRSSI                 = WIFI_SORT_BY_RSSI;        //Hier worden de Recieved Signal Strength Indicator (RSSI) gesorteerd, dit is een maat voor de sterkte van het wifi signal.
     bool showHidden                 = WIFI_SHOW_HIDDEN;         //hiermee worden de verborgen netwerken getoond, deze netwerken hebben geen SSID maar kunnen als nog mee verbonden worden.
     bool showEncryption             = WIFI_SHOW_ENCRYPTION;     //hiermee worden de encryptie methodes van de netwerken aangetoond, dit kunnen WPA, WPA2, WPA3 netwerken zijn, Zijn het open netwerken kan er direct advies aangeboden worden aan de klant.
-   
+    //  toekomst bool showBSSID                  = WIFI_SHOW_BSSID;          //Hiermee worden de BSSID's van de netwerken getoond, dit zijn de MAC adressen van de access points, dit kan handig zijn voor het identificeren van specifieke netwerken of Evil Twin aanvallen.    
     //de ESP32 WROOM kan alleen verbinding maken met 2.4Ghz werken, voor dit project is dit dan ook de logische uitkomt, zie bron: https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/wifi.html
     bool only24GHz                  = WIFI_ONLY_24GHZ;
     

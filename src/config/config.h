@@ -9,6 +9,7 @@
 #define WIFI_SHOW_HIDDEN             true
 #define WIFI_SHOW_ENCRYPTION         true
 #define WIFI_ONLY_24GHZ              true
+// toekomst #define WIFI_SHOW_BSSID              true
 
 #define DEBUG_SERIAL                 true
 #define DEBUG_BAUDRATE               115200
