@@ -14,6 +14,6 @@ void setup() {
 
 }
 
-void loop {
-scanNetworks();
+void loop() {
+    NetworkScan(config);
 }

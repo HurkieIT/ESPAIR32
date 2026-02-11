@@ -3,12 +3,12 @@
 
 #pragma once
 
-#define WIFI_SCAN_INTERVAL_MS        5000;
-#define WIFI_MAX_NETWORKS            30;
-#define WIFI_SORT_BY_RSSI            true;
-#define WIFI_SHOW_HIDDEN             true;
-#define WIFI_SHOW_ENCRYPTION         true;
-#define WIFI_ONLY_24GHZ              true;
+#define WIFI_SCAN_INTERVAL_MS        5000
+#define WIFI_MAX_NETWORKS            30
+#define WIFI_SORT_BY_RSSI            true
+#define WIFI_SHOW_HIDDEN             true
+#define WIFI_SHOW_ENCRYPTION         true
+#define WIFI_ONLY_24GHZ              true
 
 #define DEBUG_SERIAL                 true
 #define DEBUG_BAUDRATE               115200
