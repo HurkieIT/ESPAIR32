@@ -4,7 +4,7 @@
 
 void NetworkScan(const scanconfig& config) {
 
-    digitalWrite(LED_SCAN_PIN, HIGH);  // scan start -> LED aan
+    //digitalWrite(LED_SCAN_PIN, HIGH);  // scan start -> LED aan
 
     //Switch wifi module op de ESP32 naar de station mode, dit zorgt ervoor dat de ESP32 zich als een client gedraagt en vrij verbinding kan maken met netwerken.
     //Vervolgens wordt er een disconnect afgedwongen om ervoor te zorgen dat er geen verbindingen actief zijn tijdens de daadwerkelijke scan. De reden hiervoor is dat de ESP32 maar 1 netwerkinterface in zijn bezit heeft.
@@ -59,6 +59,6 @@ void NetworkScan(const scanconfig& config) {
             Serial.println();
             Serial.println("________________________________________________");
 
-            digitalWrite(LED_SCAN_PIN, LOW);   // scan klaar  -> LED uit
+            //digitalWrite(LED_SCAN_PIN, LOW);   // scan klaar  -> LED uit
     }
 }
