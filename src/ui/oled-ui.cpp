@@ -1,11 +1,11 @@
 // User Interaction via OLED Display
 
-#include "oled-ui.h"
+//#include "oled-ui.h"
 
-OledUI::OledUI() {
+//OledUI::OledUI() {
     // Constructor implementation
-}
+//}
 
-void OledUI::begin() {
+//void OledUI::begin() {
     // Initialize the OLED display
-}
+//}

@@ -2,6 +2,12 @@
 #include <WiFi.h>
 #include "net/wifi-scan.h"
 
+static void ClearTerminal()
+{
+    Serial.print("\033[2J");  // clear screen
+    Serial.print("\033[H");   // cursor home
+}
+
 void NetworkScan(const scanconfig& config) {
 
     //digitalWrite(LED_SCAN_PIN, HIGH);  // scan start -> LED aan
@@ -9,6 +15,8 @@ void NetworkScan(const scanconfig& config) {
     //Switch wifi module op de ESP32 naar de station mode, dit zorgt ervoor dat de ESP32 zich als een client gedraagt en vrij verbinding kan maken met netwerken.
     //Vervolgens wordt er een disconnect afgedwongen om ervoor te zorgen dat er geen verbindingen actief zijn tijdens de daadwerkelijke scan. De reden hiervoor is dat de ESP32 maar 1 netwerkinterface in zijn bezit heeft.
     //Bron: https://docs.espressif.com/projects/arduino-esp32/en/latest/api/wifi.html
+    
+    ClearTerminal();
     WiFi.mode(WIFI_STA);
     WiFi.disconnect(true);
     delay(100);
